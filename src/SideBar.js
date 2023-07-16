@@ -18,8 +18,8 @@ function SideBar() {
           alt=""
         />
         <Avatar className="sidebar__avatar" />
-        <h2>Iam a king Mostafa</h2>
-        <h4>elhawarymosataf.com</h4>
+        <h2>Sonny</h2>
+        <h4>Sonny.com</h4>
       </div>
 
       <div className="sidebar__stats">
