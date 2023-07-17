@@ -6,7 +6,6 @@ import ChatIcon from "@mui/icons-material/Chat";
 import ShareIcon from "@mui/icons-material/Share";
 import SendIcon from "@mui/icons-material/Send";
 import "./post.css";
-// import './InputOption.css'
 function Post({ name, description, message, photoUrl }) {
   return (
     <div className="post">
@@ -25,8 +24,8 @@ function Post({ name, description, message, photoUrl }) {
       <div className="post__buttons">
         <InputOption Icon={ThumbUpAltIcon} title="Like" color="gray" />
         <InputOption Icon={ChatIcon} title="Comment" color="gray" />
-        <InputOption Icon={ShareIcon} title="Comment" color="Share" />
-        <InputOption Icon={SendIcon} title="Comment" color="Send" />
+        <InputOption Icon={ShareIcon} title="Share" color="Share" />
+        <InputOption Icon={SendIcon} title="Send" color="Send" />
       </div>
     </div>
   );
