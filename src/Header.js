@@ -7,13 +7,17 @@ import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+
 import "./Header.css";
 function Header() {
+
+
+
   return (
     <div className="header">
       <div className="header__left">
         <LinkedInIcon style={{ color: "#0076B6" }} />
-
+           Logo
         <div className="header__search">
           <SearchIcon />
           <input type="text"></input>
