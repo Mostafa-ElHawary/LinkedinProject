@@ -7,8 +7,9 @@ import EventNoteIcon from "@mui/icons-material/EventNote";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import Post from "./Post";
 import "./Feed.css";
-import firebase from "firebase";
+// import firebase from 'firebase';
 import { db } from "./firebase";
+import firebase from "./firebase";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
@@ -25,7 +26,6 @@ function Feed() {
     );
   }, []);
 
-  
   const sendPost = (e) => {
     e.preventDefault();
 
@@ -37,7 +37,6 @@ function Feed() {
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
   };
-
 
   return (
     <div className="feed">

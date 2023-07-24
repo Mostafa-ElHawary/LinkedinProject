@@ -3,9 +3,10 @@
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-import firebase from 'firebase'; // Import firebase namespace (not as default)
-// import {getAuth} from "firebase/auth"
 // import 'firebase/firestore'; // Import specific Firebase service
+import firebase from "./firebase";
+// Import firebase namespace (not as default)
+// import {getAuth} from "firebase/auth"
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCTNQRK83VjTGIRjQeLQzZrWwC_Op6mqs0",
@@ -16,9 +17,8 @@ const firebaseConfig = {
   appId: "1:428900923028:web:76d66b17c677c443152681",
 };
 
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
+export default firebase;
 export  { db, auth };
-
